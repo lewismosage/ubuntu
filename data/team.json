@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Dr. Sarah Mwangi",
+    "role": "Executive Director",
+    "photoURL": "/team/sarah-mwangi.jpg",
+    "bio": "Dr. Sarah Mwangi brings over 15 years of experience in public health and healthcare management to Ubuntu Afya. She has led numerous health initiatives across East Africa and is passionate about improving healthcare access in underserved communities."
+  },
+  {
+    "id": "2", 
+    "name": "James Kiprop",
+    "role": "Technology Director",
+    "photoURL": "/team/james-kiprop.jpg",
+    "bio": "James Kiprop is a technology innovator with expertise in health information systems. He leads the development of STONE-HMIS® and other digital health solutions that power our kiosk network."
+  },
+  {
+    "id": "3",
+    "name": "Grace Akinyi",
+    "role": "Community Outreach Coordinator", 
+    "photoURL": "/team/grace-akinyi.jpg",
+    "bio": "Grace Akinyi works directly with communities to ensure our health services meet local needs. She has been instrumental in establishing partnerships with local health workers and community leaders."
+  }
+]

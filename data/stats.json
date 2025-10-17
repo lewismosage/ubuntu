@@ -1,0 +1,9 @@
+{
+  "kiosks": 25,
+  "peopleServed": 250000,
+  "womenAndChildrenPct": 60,
+  "skilledDeliveryIncreasePct": 60,
+  "healthWorkersTrained": 100,
+  "clinicsConnected": 30,
+  "lackAccessPct": 40
+}

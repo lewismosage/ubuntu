@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "slug": "new-kiosk-launch-nairobi",
+    "title": "New Ubuntu Afya Kiosk Launches in Nairobi Slums",
+    "date": "2024-01-15",
+    "excerpt": "We're excited to announce the opening of our 25th kiosk in the Mathare slums of Nairobi, bringing essential healthcare services to over 10,000 residents.",
+    "content": "Today marks a significant milestone in our mission to provide accessible healthcare across Kenya. Our new kiosk in Mathare, Nairobi, represents our commitment to reaching the most vulnerable communities.\n\nThe kiosk is equipped with STONE-HMIS® technology and staffed by trained community health workers. It will provide primary healthcare services, maternal and child health support, and health education to over 10,000 residents in the area.\n\nThis launch brings our total network to 25 kiosks serving 250,000 people across Kenya. We're grateful to our partners and the Mathare community for making this possible.",
+    "tags": ["kiosk", "nairobi", "launch"],
+    "videoLink": null
+  },
+  {
+    "id": "2",
+    "slug": "stone-hmis-expansion",
+    "title": "STONE-HMIS® Expands to 30 Clinics Nationwide",
+    "date": "2024-01-10",
+    "excerpt": "Our health information management system now connects 30 clinics across Kenya, improving data collection and patient care coordination.",
+    "content": "We're proud to announce that STONE-HMIS® has successfully expanded to 30 clinics nationwide. This digital health platform is revolutionizing how healthcare data is collected, stored, and analyzed in Kenya.\n\nThe system enables real-time patient tracking, inventory management, and health outcome monitoring. Clinics using STONE-HMIS® have reported 40% improvement in patient follow-up rates and 60% reduction in data collection errors.\n\nThis expansion represents a major step forward in our mission to digitize healthcare delivery in underserved communities.",
+    "tags": ["technology", "stone-hmis", "expansion"],
+    "videoLink": "https://www.youtube.com/watch?v=example"
+  },
+  {
+    "id": "3",
+    "slug": "maternal-health-success",
+    "title": "60% Increase in Skilled Delivery Rates",
+    "date": "2024-01-05",
+    "excerpt": "Our maternal health programs have achieved a 60% increase in skilled delivery rates across our kiosk network, saving countless lives.",
+    "content": "We're thrilled to share that our maternal health programs have achieved remarkable success, with a 60% increase in skilled delivery rates across our kiosk network.\n\nThis achievement is the result of comprehensive training programs for community health workers, improved access to essential medical supplies, and the implementation of our digital health tracking system.\n\nThe impact is profound: more mothers are receiving proper care during childbirth, leading to better outcomes for both mothers and babies. This success demonstrates the power of community-centered healthcare delivery.",
+    "tags": ["maternal-health", "success", "training"],
+    "videoLink": null
+  },
+  {
+    "id": "4",
+    "slug": "health-worker-training",
+    "title": "100 Health Workers Trained in Digital Health",
+    "date": "2023-12-20",
+    "excerpt": "We've successfully trained 100 community health workers in digital health tools and STONE-HMIS® system usage.",
+    "content": "Our comprehensive training program has reached a major milestone with 100 community health workers now certified in digital health tools and STONE-HMIS® system usage.\n\nThe training covers essential digital health skills, data collection best practices, and patient care coordination. These health workers are now equipped to provide better care to their communities while contributing to our national health data collection efforts.\n\nThis investment in human capital is crucial to the sustainability and effectiveness of our healthcare delivery model.",
+    "tags": ["training", "health-workers", "digital-health"],
+    "videoLink": null
+  }
+]
