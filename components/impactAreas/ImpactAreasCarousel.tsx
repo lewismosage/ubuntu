@@ -62,7 +62,7 @@ export default function ImpactAreasCarousel({
   };
 
   return (
-    <section className="py-12 bg-gradient-to-b from-ubuntu-blue via-ubuntu-blue to-white relative overflow-hidden">
+    <section className="py-12 bg-ubuntu-blue overflow-hidden">
       {/* Decorative background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
