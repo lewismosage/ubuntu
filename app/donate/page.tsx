@@ -3,7 +3,9 @@
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/home/Hero';
 import DonateForm from '@/components/DonateForm';
+import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import Link from 'next/link';
 import { 
   Heart, 
   Users, 
@@ -68,53 +70,16 @@ export default function Donate() {
   return (
     <div className="min-h-screen">
       <main id="main-content">
-        {/* Hero Section with Navigation Headers and Static Background */}
-        <div className="relative h-[60vh] bg-cover bg-center bg-no-repeat" style={{
-          backgroundImage: `url('/images/hero-healthcare-1.jpg')`
-        }}>
-          <div className="absolute inset-0 bg-black/50"></div>
-          
-          {/* Use Hero component for navigation with custom background */}
-          <div className="relative z-20 w-full">
+        {/* Hero Section */}
+        <div className="h-[70vh]">
         <Hero 
-              title=""
-              subtitle=""
+            title="Transform Lives Through Healthcare"
+            subtitle="Your donation helps us provide essential healthcare services to underserved communities across Kenya"
           showButtons={false}
               isFullPage={false}
-              showBackgroundImages={false}
-            />
-          </div>
-
-          {/* Hero Content */}
-          <div className="absolute bottom-8 left-0 right-0 z-10">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="max-w-4xl text-center">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 leading-tight drop-shadow-lg">
-                  Transform Lives Through Healthcare
-                </h1>
-                
-                <p className="text-base md:text-lg text-white/90 mb-4 max-w-2xl mx-auto drop-shadow-lg">
-                  Your donation helps us provide essential healthcare services to underserved communities across Kenya.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <button 
-                    onClick={() => document.getElementById('donation-form')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="bg-ubuntu-orange hover:bg-ubuntu-orange/90 text-white font-semibold px-6 py-2 text-base rounded-lg transition-colors"
-                  >
-                    Donate Now
-                  </button>
-                  
-                  <button 
-                    onClick={() => document.getElementById('impact-stats')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="border-2 border-white bg-white text-ubuntu-blue hover:bg-white/90 font-semibold px-6 py-2 text-base rounded-lg transition-colors"
-                  >
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+            showBackgroundImages={true}
+            customBackgroundImage="/images/donation-2.jpg"
+          />
         </div>
 
         {/* Impact Stats */}

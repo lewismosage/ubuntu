@@ -24,11 +24,16 @@ export default function OurStory() {
     <div className="min-h-screen">
       <main id="main-content">
         {/* Hero Section */}
-        <Hero 
-          title="Our Story"
-          subtitle="Transforming healthcare delivery in Kenya since 2010"
-          showButtons={false}
-        />
+        <div className="h-[70vh]">
+          <Hero 
+            title="Our Story"
+            subtitle="Transforming healthcare delivery in Kenya since 2010"
+            showButtons={false}
+            isFullPage={false}
+            showBackgroundImages={true}
+            customBackgroundImage="/images/OurStory.jpg"
+          />
+        </div>
 
         {/* Who We Are Section */}
         <section className="py-16 bg-white">

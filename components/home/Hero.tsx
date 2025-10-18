@@ -14,6 +14,7 @@ interface HeroProps {
   showButtons?: boolean;
   isFullPage?: boolean;
   showBackgroundImages?: boolean;
+  customBackgroundImage?: string;
 }
 
 interface SubItem {
@@ -163,7 +164,8 @@ export default function Hero({
   subtitle, 
   showButtons = true,
   isFullPage = true,
-  showBackgroundImages = true
+  showBackgroundImages = true,
+  customBackgroundImage
 }: HeroProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -281,17 +283,26 @@ export default function Hero({
       {/* Background Images - Behind Everything */}
       {showBackgroundImages && (
         <div className="absolute inset-0 z-0">
-          {heroImages.map((image, index) => (
+          {customBackgroundImage ? (
             <div
-              key={index}
-              className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
-                index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-              }`}
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{
-                backgroundImage: `url(${image.url})`,
+                backgroundImage: `url(${customBackgroundImage})`,
               }}
             />
-          ))}
+          ) : (
+            heroImages.map((image, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+                  index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                }`}
+                style={{
+                  backgroundImage: `url(${image.url})`,
+                }}
+              />
+            ))
+          )}
           {/* Dark Overlay */}
           <div className="absolute inset-0 bg-black/50" />
         </div>
@@ -531,7 +542,7 @@ export default function Hero({
       </div>
 
       {/* Image Indicators */}
-      {showBackgroundImages && (
+      {showBackgroundImages && !customBackgroundImage && (
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 flex space-x-2">
           {heroImages.map((_, index) => (
             <button
