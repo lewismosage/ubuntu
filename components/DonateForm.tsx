@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { HeartHandshake, ShieldCheck, Banknote, ArrowRight, CheckCircle, Loader2, Check } from 'lucide-react';
 import Link from 'next/link';
+import donationHeroImage from '@/public/images/donation-2.jpg';
 
 interface DonationFormState {
   donationAmount: number | null;
@@ -20,7 +22,7 @@ interface DonationFormProps {
 }
 
 export default function DonateForm({ 
-  heroImage = '/images/donation-hero.jpg' 
+  heroImage: heroImageProp 
 }: DonationFormProps) {
   const [formState, setFormState] = useState<DonationFormState>({
     donationAmount: 50,
@@ -132,7 +134,7 @@ export default function DonateForm({
           {/* Right: Image */}
           <div className="relative w-full lg:w-1/2 h-[300px] lg:h-full">
             <img
-              src={heroImage}
+              src={donationHeroImage.src}
               alt="Donation Hero"
               className="absolute inset-0 w-full h-full object-cover shadow-lg"
             />

@@ -13,6 +13,7 @@ interface HeroProps {
   subtitle?: string;
   showButtons?: boolean;
   isFullPage?: boolean;
+  showBackgroundImages?: boolean;
 }
 
 interface SubItem {
@@ -161,7 +162,8 @@ export default function Hero({
   title, 
   subtitle, 
   showButtons = true,
-  isFullPage = true
+  isFullPage = true,
+  showBackgroundImages = true
 }: HeroProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -277,21 +279,23 @@ export default function Hero({
   return (
     <section className={`relative ${isFullPage ? 'h-screen' : 'min-h-[600px]'} flex flex-col overflow-hidden`}>
       {/* Background Images - Behind Everything */}
-      <div className="absolute inset-0 z-0">
-        {heroImages.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
-              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-            }`}
-            style={{
-              backgroundImage: `url(${image.url})`,
-            }}
-          />
-        ))}
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/50" />
-      </div>
+      {showBackgroundImages && (
+        <div className="absolute inset-0 z-0">
+          {heroImages.map((image, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+                index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+              }`}
+              style={{
+                backgroundImage: `url(${image.url})`,
+              }}
+            />
+          ))}
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+      )}
 
       {/* Header - On Top of Images */}
       <header className="relative z-20 w-full" ref={dropdownRef}>
@@ -527,18 +531,20 @@ export default function Hero({
       </div>
 
       {/* Image Indicators */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 flex space-x-2">
-        {heroImages.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentImageIndex(index)}
-            className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-              index === currentImageIndex ? 'bg-ubuntu-orange' : 'bg-white/50'
-            }`}
-            aria-label={`Go to image ${index + 1}`}
-          />
-        ))}
-      </div>
+      {showBackgroundImages && (
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 flex space-x-2">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImageIndex(index)}
+              className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                index === currentImageIndex ? 'bg-ubuntu-orange' : 'bg-white/50'
+              }`}
+              aria-label={`Go to image ${index + 1}`}
+            />
+          ))}
+        </div>
+      )}
     </section>
   );
 }
