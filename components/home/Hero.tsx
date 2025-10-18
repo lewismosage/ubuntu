@@ -51,11 +51,11 @@ const heroImages = [
 
 const navigation: NavigationItem[] = [
   {
-    name: "Our Story",
+    name: "About Us",
     hasDropdown: true,
     dropdownItems: [
       {
-        name: "Overview",
+        name: "Our Story",
         description: "Our mission, values, and vision for the future.",
         link: "/our-story",
       },
@@ -65,9 +65,9 @@ const navigation: NavigationItem[] = [
         link: "/our-people",
       },
       {
-        name: "Partnerships",
+        name: "Our Partners",
         description: "See how your church, business, or group can make an impact.",
-        link: "/partnerships",
+        link: "/our-partners",
       },
     ],
   },
@@ -81,14 +81,9 @@ const navigation: NavigationItem[] = [
         link: "/our-model",
       },
       {
-        name: "Our Strategy",
-        description: "Our approach to sustainable, long-term healthcare solutions.",
+        name: "Strategic Plan 2022-2026",
+        description: "Discover how our sustainable, locally led model delivers long-term healthcare solutions.",
         link: "/strategy",
-      },
-      {
-        name: "Latest Updates",
-        description: "Stay informed with our latest news and impact reports.",
-        link: "/updates",
       },
     ],
   },
@@ -110,17 +105,6 @@ const navigation: NavigationItem[] = [
         name: "Research & Evidence",
         description: "Explore our research findings and evidence-based practices.",
         link: "/impact#research-evidence",
-      },
-    ],
-  },
-  {
-    name: "Our Strategy",
-    hasDropdown: true,
-    dropdownItems: [
-      {
-        name: "Strategic Plan 2022-2026",
-        description: "Discover how our sustainable, locally led model delivers long-term healthcare solutions.",
-        link: "/strategy",
       },
     ],
   },
@@ -316,7 +300,7 @@ export default function Hero({
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/" className="flex items-center space-x-3">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white overflow-hidden border-4 border-white shadow-lg">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white overflow-hidden border-4 border-white shadow">
                   <Image
                     src={logo}
                     alt="Ubuntu Afya Logo"
