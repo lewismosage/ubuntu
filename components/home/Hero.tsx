@@ -1,9 +1,12 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronDown, ChevronRight, X, Menu } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
+import logo from '@/public/images/logo.jpg';
+
 
 interface HeroProps {
   title: string;
@@ -33,15 +36,15 @@ interface NavigationItem {
 
 const heroImages = [
   {
-    url: "/hero-healthcare-1.jpg",
+    url: "/images/hero-healthcare-1.jpg",
     alt: "Community health workers providing care"
   },
   {
-    url: "/hero-healthcare-2.jpg", 
+    url: "/images/hero-healthcare-2.jpg", 
     alt: "Ubuntu Afya kiosk in action"
   },
   {
-    url: "/hero-healthcare-3.jpg",
+    url: "/images/hero-healthcare-3.jpg",
     alt: "Digital health technology in use"
   }
 ];
@@ -60,28 +63,6 @@ const navigation: NavigationItem[] = [
         name: "Our People",
         description: "The team bringing life-saving healthcare change.",
         link: "/our-people",
-      },
-      {
-        name: "Impact Reports",
-        description: "Explore the data behind our mission and milestones.",
-        link: "/impact",
-        subItems: [
-          {
-            name: "Primary Health Care",
-            description: "Learn about our Ubuntu Afya kiosks and community healthcare.",
-            link: "/impact#primary-healthcare",
-          },
-          {
-            name: "Health Technology",
-            description: "Discover our STONE-HMIS® system and digital health solutions.",
-            link: "/impact#health-technology",
-          },
-          {
-            name: "Research & Evidence",
-            description: "Explore our research findings and evidence-based practices.",
-            link: "/impact#research-evidence",
-          },
-        ],
       },
       {
         name: "Partnerships",
@@ -108,6 +89,59 @@ const navigation: NavigationItem[] = [
         name: "Latest Updates",
         description: "Stay informed with our latest news and impact reports.",
         link: "/updates",
+      },
+    ],
+  },
+  {
+    name: "Our Impact",
+    hasDropdown: true,
+    dropdownItems: [
+      {
+        name: "Primary Health Care",
+        description: "Learn about our Ubuntu-Afya kiosks and community healthcare model.",
+        link: "/impact#primary-healthcare",
+      },
+      {
+        name: "Health Technology",
+        description: "Discover our STONE-HMIS® system and digital health solutions.",
+        link: "/impact#health-technology",
+      },
+      {
+        name: "Research & Evidence",
+        description: "Explore our research findings and evidence-based practices.",
+        link: "/impact#research-evidence",
+      },
+    ],
+  },
+  {
+    name: "Our Strategy",
+    hasDropdown: true,
+    dropdownItems: [
+      {
+        name: "Strategic Plan 2022-2026",
+        description: "Discover how our sustainable, locally led model delivers long-term healthcare solutions.",
+        link: "/strategy",
+      },
+    ],
+  },
+  {
+    name: "Latest Updates",
+    hasDropdown: true,
+    dropdownItems: [
+      {
+        name: "Latest News",
+        description: "Stay informed with our latest news, inspiring stories, research findings, and impact reports from the field.",
+        link: "/updates",
+      },
+      {
+        name: "Reports",
+        description: "Explore our latest reports, including annual impact reports, research findings, and more.",
+        link: "/reports",
+      },
+      {
+        name: "Initiatives",
+        description: "Explore our latest initiatives, including our community-led healthcare model, digital health solutions, and more.",
+        link: "/initiatives",
       },
     ],
   },
@@ -282,11 +316,20 @@ export default function Hero({
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/" className="flex items-center space-x-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-ubuntu-blue">
-                  <span className="text-lg font-bold text-white">UA</span>
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white overflow-hidden border-4 border-white shadow-lg">
+                  <Image
+                    src={logo}
+                    alt="Ubuntu Afya Logo"
+                    width={64}
+                    height={64}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-xl font-bold text-white">Ubuntu Afya</span>
+                  <span className="text-xl font-bold">
+                    <span className="text-ubuntu-blue">Ubuntu</span>{" "}
+                    <span className="text-ubuntu-orange">Afya</span>
+                  </span>
                   <span className="text-xs text-white/80">2010-2025</span>
                 </div>
               </Link>
@@ -487,7 +530,7 @@ export default function Hero({
                   asChild 
                   variant="outline" 
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-ubuntu-blue font-semibold px-8 py-4 text-lg"
+                  className="border-white bg-white text-ubuntu-blue font-semibold px-8 py-4 text-lg"
                 >
                   <Link href="/our-story">
                     Read More

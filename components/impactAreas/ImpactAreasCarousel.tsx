@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import healthImage from '../../public/hero-healthcare-1.jpg';
+import healthImage from '../../public/images/hero-healthcare-1.jpg';
 
 interface Statistic {
   value: string;
