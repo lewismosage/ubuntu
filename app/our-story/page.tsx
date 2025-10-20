@@ -35,6 +35,9 @@ export default function OurStory() {
           />
         </div>
 
+        {/* Spacer below Hero to match home page rhythm */}
+        <div className="h-10 md:h-16" />
+
         {/* Who We Are Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
