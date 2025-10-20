@@ -92,11 +92,19 @@ export default function Strategy() {
     <div className="min-h-screen">
       <main id="main-content">
         {/* Hero Section */}
-        <Hero 
-          title="Our Strategy"
-          subtitle="A comprehensive approach to transforming healthcare delivery in Kenya"
-          showButtons={false}
-        />
+        <div className="h-[70vh]">
+          <Hero 
+            title="Our Strategy"
+            subtitle="A comprehensive approach to transforming healthcare delivery in Kenya"
+            showButtons={false}
+            isFullPage={false}
+            showBackgroundImages={true}
+            customBackgroundImage="/images/strategy.jpg"
+          />
+        </div>
+
+        {/* Spacer below Hero to match page rhythm */}
+        <div className="h-10 md:h-16" />
 
         {/* Strategy Overview */}
         <section className="py-16 bg-white">
