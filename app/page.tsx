@@ -15,7 +15,7 @@ export default function Home() {
       title: 'Primary Health Care - Ubuntu-Afya Kiosks',
       description: 'Through our Ubuntu-Afya kiosks, we bring essential health services closer to families in underserved communities, co-owned with local groups to ensure accountability and sustainability.',
       details: 'We equip communities with accessible healthcare facilities and trained health workers to provide maternal and child health services, basic diagnostics, and health education.',
-      link: '/impact/primary-healthcare',
+      link: '/primary-healthcare',
       statistics: [
         { value: '25', label: 'Kiosks Operating' },
         { value: '290K+', label: 'Patients Served' },
@@ -27,7 +27,7 @@ export default function Home() {
       title: 'Health Technology - STONE-HMIS® System',
       description: 'Our STONE-HMIS® connects clinics, communities, and county governments with real-time data to improve care, strengthen referrals, and guide decisions across health systems.',
       details: 'Our STONE-HMIS® system enables real-time health monitoring, digital patient records, and data-driven decision making for better health outcomes.',
-      link: '/impact/health-technology',
+      link: '/health-technology',
       statistics: [
         { value: '100%', label: 'Real-time Data' },
         { value: '50+', label: 'Clinics Connected' },
@@ -39,7 +39,7 @@ export default function Home() {
       title: 'Research & Evidence - Joanna Briggs Institute Collaboration',
       description: 'As a collaborating center with the Joanna Briggs Institute, we equip frontline workers with tools and training to translate evidence into practice, shaping policy and improving outcomes.',
       details: 'We conduct health outcome research, program evaluations, and community assessments to inform policy recommendations and strengthen health systems.',
-      link: '/impact/research-evidence',
+      link: '/research-evidence',
       statistics: [
         { value: '500+', label: 'Workers Trained' },
         { value: '15', label: 'Research Studies' },
@@ -100,7 +100,7 @@ export default function Home() {
         {/* Impact Areas Carousel */}
         <ImpactAreasCarousel
           areas={impactAreas}
-          image="/images/impact-hero.jpg"
+          image="/images/hero-healthcare-1.jpg"
           heading="Proven Network for Healthier Kenya"
           subheading="Ubuntu Afya's approach leverages our unique position to deliver systemic impact at scale through our community-centered healthcare model and digital health solutions."
           autoRotate={true}

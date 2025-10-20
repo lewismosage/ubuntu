@@ -96,17 +96,17 @@ const navigation: NavigationItem[] = [
       {
         name: "Primary Health Care",
         description: "Learn about our Ubuntu-Afya kiosks and community healthcare model.",
-        link: "/impact#primary-healthcare",
+        link: "/primary-healthcare",
       },
       {
         name: "Health Technology",
         description: "Discover our STONE-HMIS® system and digital health solutions.",
-        link: "/impact#health-technology",
+        link: "/health-technology",
       },
       {
         name: "Research & Evidence",
         description: "Explore our research findings and evidence-based practices.",
-        link: "/impact#research-evidence",
+        link: "/research-evidence",
       },
     ],
   },
