@@ -117,7 +117,7 @@ const navigation: NavigationItem[] = [
       {
         name: "Latest News",
         description: "Stay informed with our latest news, inspiring stories, research findings, and impact reports from the field.",
-        link: "/updates",
+        link: "/latest-news",
       },
       {
         name: "Reports",
