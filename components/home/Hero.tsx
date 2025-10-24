@@ -329,7 +329,6 @@ export default function Hero({
                     <span className="text-ubuntu-blue">Ubuntu</span>{" "}
                     <span className="text-ubuntu-orange">Afya</span>
                   </span>
-                  <span className="text-xs text-white/80">2010-2025</span>
                 </div>
               </Link>
             </div>
@@ -503,7 +502,12 @@ export default function Hero({
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-              {title}
+              {title.split('|').map((line, index) => (
+                <span key={index}>
+                  {line}
+                  {index < title.split('|').length - 1 && <br />}
+                </span>
+              ))}
             </h1>
             
             {subtitle && (

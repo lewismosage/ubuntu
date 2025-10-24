@@ -18,7 +18,7 @@ export default function Home() {
       link: '/primary-healthcare',
       statistics: [
         { value: '25', label: 'Kiosks Operating' },
-        { value: '290K+', label: 'Patients Served' },
+        { value: '250,000', label: 'Patients Served' },
         { value: '60%', label: 'Women & Children' }
       ]
     },
@@ -53,8 +53,8 @@ export default function Home() {
       <main id="main-content">
         {/* Hero Section */}
         <Hero 
-          title="At Ubuntu Afya, we are reimagining healthcare delivery in underserved communities"
-          subtitle="Through innovative technology and community-centered approaches, we're making quality healthcare accessible to all Kenyans."
+          title="Delivering|Healthcare in|Kenya's most|underserved|communities"
+          subtitle="Through innovative technology, research and community-centered approaches."
           showButtons={true}
           isFullPage={true}
         />
@@ -67,7 +67,7 @@ export default function Home() {
                 Our Impact in Numbers
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Since 2010, we've been transforming healthcare delivery across Kenya through our innovative kiosk model and digital health solutions.
+                Since 2010, our community health programs have brought us a step closer to reducing health disparities in the communities we serve.
               </p>
             </div>
 

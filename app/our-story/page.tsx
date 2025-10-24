@@ -165,64 +165,6 @@ export default function OurStory() {
             </div>
           </div>
         </section>
-
-        {/* Our Partners Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-ubuntu-blue mb-8">
-                Our Partners
-              </h2>
-              
-              <p className="text-lg text-gray-700 mb-8">
-                We work closely with government agencies, international organizations, and local communities 
-                to ensure the success and sustainability of our programs.
-              </p>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                {/* TODO: Replace with actual partner logos */}
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <div className="h-16 bg-gray-200 rounded flex items-center justify-center">
-                    <span className="text-gray-500 text-sm">Partner Logo</span>
-                  </div>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <div className="h-16 bg-gray-200 rounded flex items-center justify-center">
-                    <span className="text-gray-500 text-sm">Partner Logo</span>
-                  </div>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <div className="h-16 bg-gray-200 rounded flex items-center justify-center">
-                    <span className="text-gray-500 text-sm">Partner Logo</span>
-                  </div>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <div className="h-16 bg-gray-200 rounded flex items-center justify-center">
-                    <span className="text-gray-500 text-sm">Partner Logo</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Team Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-ubuntu-blue mb-8 text-center">
-                Our Team
-              </h2>
-              
-              <p className="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
-                Our dedicated team of healthcare professionals, technologists, and community advocates 
-                work tirelessly to bring quality healthcare to underserved communities across Kenya.
-              </p>
-              
-              <TeamGrid team={teamData} />
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />

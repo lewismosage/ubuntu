@@ -28,10 +28,10 @@ export default function ElegantStatCard({
   // Format the display value to match the original format
   const formatValue = (num: number): string => {
     if (typeof value === 'string') {
-      const suffix = value.replace(/[0-9]/g, '');
-      return `${num}${suffix}`;
+      const suffix = value.replace(/[0-9,]/g, '');
+      return `${num.toLocaleString()}${suffix}`;
     }
-    return num.toString();
+    return num.toLocaleString();
   };
 
   useEffect(() => {
